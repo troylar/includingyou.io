@@ -1,14 +1,47 @@
 {
-    "providers": {
-        "awscloudformation": {
-            "AuthRoleName": "includingyouio-20190125192930-authRole",
-            "UnauthRoleArn": "arn:aws:iam::225643548030:role/includingyouio-20190125192930-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::225643548030:role/includingyouio-20190125192930-authRole",
-            "Region": "us-east-1",
-            "DeploymentBucketName": "includingyouio-20190125192930-deployment",
-            "UnauthRoleName": "includingyouio-20190125192930-unauthRole",
-            "StackName": "includingyouio-20190125192930",
-            "StackId": "arn:aws:cloudformation:us-east-1:225643548030:stack/includingyouio-20190125192930/72650de0-2101-11e9-a4ef-0afcd132dcac"
-        }
-    }
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "includingyouio-20190125192930-authRole",
+			"UnauthRoleArn": "arn:aws:iam::225643548030:role/includingyouio-20190125192930-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::225643548030:role/includingyouio-20190125192930-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "includingyouio-20190125192930-deployment",
+			"UnauthRoleName": "includingyouio-20190125192930-unauthRole",
+			"StackName": "includingyouio-20190125192930",
+			"StackId": "arn:aws:cloudformation:us-east-1:225643548030:stack/includingyouio-20190125192930/72650de0-2101-11e9-a4ef-0afcd132dcac"
+		}
+	},
+	"auth": {
+		"cognito929ead3e": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/includingyouio-20190125192930-deployment/amplify-cfn-templates/auth/cognito929ead3e-cloudformation-template.yml",
+				"logicalId": "authcognito929ead3e"
+			},
+			"lastPushTimeStamp": "2019-01-26T00:34:32.410Z",
+			"output": {
+				"IdentityPoolId": "us-east-1:45499737-9ff6-4f2e-8ee6-6d1777c66d99",
+				"IdentityPoolName": "includingyouio_identitypool_49ed8692"
+			},
+			"lastPushDirHash": "2t+tn+t0wwo4g7yraETXAtCDOwI="
+		}
+	},
+	"analytics": {
+		"includingyouio": {
+			"service": "Pinpoint",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/includingyouio-20190125192930-deployment/amplify-cfn-templates/analytics/pinpoint-cloudformation-template.json",
+				"logicalId": "analyticsincludingyouio"
+			},
+			"lastPushTimeStamp": "2019-01-26T00:34:32.410Z",
+			"output": {
+				"appName": "includingyouio",
+				"Region": "us-east-1",
+				"Id": "cc922a075bd246e88bf43109e458b205"
+			},
+			"lastPushDirHash": "AmDgLZH16QamXFwA9FHeeMXmR34="
+		}
+	}
 }

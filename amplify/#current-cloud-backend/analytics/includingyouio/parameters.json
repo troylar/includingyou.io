@@ -1,0 +1,11 @@
+{
+    "appName": "includingyouio",
+    "roleName": "pinpointLambdaRole8db5bb77",
+    "cloudWatchPolicyName": "cloudWatchPolicy8db5bb77",
+    "pinpointPolicyName": "pinpointPolicy8db5bb77",
+    "authPolicyName": "pinpoint_amplify_8db5bb77",
+    "unauthPolicyName": "pinpoint_amplify_8db5bb77",
+    "authRoleName": "includingyouio-20190125192930-authRole",
+    "unauthRoleName": "includingyouio-20190125192930-unauthRole",
+    "IAMPrefix": "225643548030"
+}
